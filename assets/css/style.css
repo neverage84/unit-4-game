@@ -45,6 +45,10 @@ p {
  margin-top: 20px;
 }
 
+.wins , .losses {
+    margin-top: 20px;
+}
+
 .buttonRow {
     margin-top: 20px;
     margin-left: 20px;

@@ -13,5 +13,20 @@ body, html {
     color: white;
     font-size: 48px;
     margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
 }
 
+
+
+.GameInfo {
+    background-color: bisque;
+    color: green;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+p {
+    padding:10px;
+    margin: 10px;
+}

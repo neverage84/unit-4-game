@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("../images/background.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.GameName {
+    background-color: orange;
+    color: white;
+    font-size: 48px;
+    margin-left: 20px;
+}
+

@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class ="row">
-        <div class="col-4" id="result">39</div>
+        <div class="col-4" id="result"></div>
         <div class="col-3" id="WinLoss">
         <div class="row wins" id="WinNumber">Wins:</div>
         <div class="row losses" id="LossNumber">Losses:</div>
@@ -71,12 +71,15 @@ $(document).ready(function() {
 
     //Make our variables global
     var totalscore = 0;
-    var result = 0;
+    var result = Math.floor(Math.random() * 120) + 19;
+    $("#result").text(result);
     //What does each button do
 
 $(".crystal").on("click", function() {
+  
   totalscore += parseInt($(this).val());
   $("#YourScore").text(totalscore);
+  
 });
 
 

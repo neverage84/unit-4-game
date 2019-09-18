@@ -98,9 +98,10 @@ $(document).ready(function() {
         $("#crystal-3").val(crystal_3);
         $("#crystal-4").val(crystal_4);
         var totalscore = 0;
+        $("#YourScore").text(totalscore);
         var targetscore = Math.floor(Math.random() * 120) + 19;
         $("#result").text(targetscore);
-
+       
     }
 
 
@@ -110,18 +111,31 @@ $(document).ready(function() {
     //What does each button do
   
     $(".crystal").on("click", function() {
-    if (totalscore < targetscore) {
-        totalscore += parseInt($(this).val());
-        $("#YourScore").text(totalscore);
-        if (totalscore === targetscore)  {
-            wins++;
-            alert ("You win!");
-            Reset();
+        if (totalscore < targetscore) {
+            totalscore += parseInt($(this).val());
+            $("#YourScore").text(totalscore);
+            if (totalscore === targetscore) {
+                wins += 1;
+                $("#WinNumber").text("Wins: " + wins);
+                alert("You Win!");
+                Reset();
+            }
+            else if (totalscore > targetscore) {
+                losses += 1;
+                $("#LossNumber").text("Losses: " +  losses);
+                alert("You Lost!");
+                Reset();
+            }
+
         }
+
+        
+    
+        });
         
 
 
-        }
+        
 
     
     

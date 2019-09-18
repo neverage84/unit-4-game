@@ -3,10 +3,10 @@
 $(document).ready(function() {
 
     //Make our variables global
-    var crystal_1 = Math.floor(Math.random() * 12) + 1;
-    var crystal_2 = Math.floor(Math.random() * 12) + 1;
-    var crystal_3 = Math.floor(Math.random() * 12) + 1;
-    var crystal_4 = Math.floor(Math.random() * 12) + 1;
+    var crystal_1 = Math.floor(Math.random() * 11) + 1;
+    var crystal_2 = Math.floor(Math.random() * 11) + 1;
+    var crystal_3 = Math.floor(Math.random() * 11) + 1;
+    var crystal_4 = Math.floor(Math.random() * 11) + 1;
     $("#crystal-1").val(crystal_1); 
     $("#crystal-2").val(crystal_2);
     $("#crystal-3").val(crystal_3);
@@ -22,10 +22,10 @@ $(document).ready(function() {
     $("#result").text(targetscore);
 
     function Reset() {
-        var crystal_1 = Math.floor(Math.random() * 12) + 1;
-        var crystal_2 = Math.floor(Math.random() * 12) + 1;
-        var crystal_3 = Math.floor(Math.random() * 12) + 1;
-        var crystal_4 = Math.floor(Math.random() * 12) + 1;
+        var crystal_1 = Math.floor(Math.random() * 11) + 1;
+        var crystal_2 = Math.floor(Math.random() * 11) + 1;
+        var crystal_3 = Math.floor(Math.random() * 11) + 1;
+        var crystal_4 = Math.floor(Math.random() * 11) + 1;
         $("#crystal-1").val(crystal_1); 
         $("#crystal-2").val(crystal_2);
         $("#crystal-3").val(crystal_3);
